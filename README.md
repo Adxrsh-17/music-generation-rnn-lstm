@@ -1,16 +1,15 @@
 Music Generation with LSTM
-🎶 This project showcases a machine learning model that generates music using Long Short-Term Memory (LSTM) networks. Trained on a dataset of classical MIDI files, the model learns musical patterns and structures to compose original pieces.
+🎶 A machine learning model that generates music using Long Short-Term Memory (LSTM) networks. Trained on classical MIDI files, it learns musical patterns and structures to compose original pieces.
 🚀 Project Overview
-The core objective is to develop an LSTM-based neural network capable of generating unique musical compositions. By learning temporal relationships within sequences of musical notes, the model produces melodies that reflect the stylistic patterns of the training data.
+The goal is to develop an LSTM-based neural network to generate unique musical compositions. By learning temporal relationships within note sequences, the model produces melodies reflecting the training data's stylistic patterns.
 ✨ Key Features
 
-MIDI File Parsing: Utilizes the music21 library to efficiently parse MIDI files, extracting individual notes and chords.
-LSTM-Based Model: Built with LSTM layers, ideal for complex sequence prediction tasks like music generation.
-Dynamic Music Generation: Generates fresh melodies from an initial seed sequence of notes post-training.
-Customizable Dataset: Allows training on user-provided MIDI files to create diverse musical styles.
+MIDI File Parsing: Uses the music21 library to parse MIDI files and extract notes and chords.
+LSTM-Based Model: Built with LSTM layers for complex sequence prediction tasks like music generation.
+Dynamic Music Generation: Generates melodies from an initial seed sequence of notes post-training.
+Customizable Dataset: Supports training on user-provided MIDI files for diverse musical styles.
 
 ⚙️ Installation
-To set up the project, follow these steps:
 
 Clone the repository:
 git clone https://github.com/Adxrsh-17/music-generation-rnn-lstm.git
@@ -23,30 +22,28 @@ pip install -r requirements.txt
 
 📖 Usage
 Dataset Preparation
-Organize your MIDI files in the designated directory. The project includes scripts to streamline dataset organization for seamless training.
+Organize your MIDI files in the designated directory. Included scripts streamline dataset organization for seamless training.
 Model Training
-With the dataset ready, start the training process. The LSTM model learns note relationships by processing sequences, predicting subsequent notes over multiple epochs to minimize errors.
+With the dataset ready, start training. The LSTM model learns note relationships by processing sequences and predicting subsequent notes over multiple epochs to minimize errors.
 Music Generation
-After training, provide a seed sequence (a few initial notes) to generate a new melody. The model predicts subsequent notes, creating a composition that can be saved as a MIDI file for playback.
+Post-training, provide a seed sequence (a few initial notes) to generate a new melody. The model predicts subsequent notes, creating a composition savable as a MIDI file.
 🧠 Model Architecture
-The model is built on an LSTM architecture, optimized for sequence prediction in music generation. Key components include:
 
-LSTM Layers: Capture intricate temporal dependencies in music sequences.
-Dropout Layers: Prevent overfitting by randomly deactivating input units during training.
-Dense Layer: Uses softmax activation to output probabilities for each possible note.
-Optimizer: Adamax, efficient for training deep learning models.
+LSTM Layers: Capture temporal dependencies in music sequences.
+Dropout Layers: Prevent overfitting by deactivating input units during training.
+Dense Layer: Uses softmax activation for note probability output.
+Optimizer: Adamax, efficient for deep learning model training.
 
 🗃️ Dataset
-The model is trained on a dataset of classical music in MIDI format. Each file represents a unique musical piece, processed to extract notes and chords for training. Users can train the model on their own MIDI files to explore various musical styles.
+Trained on classical music MIDI files, processed to extract notes and chords. Users can train on their own MIDI files for varied styles.
 📦 Dependencies
-The project requires the following Python libraries:
 
-music21: For parsing and manipulating MIDI files.
+music21: For MIDI file parsing and manipulation.
 tensorflow: For building and training the LSTM model.
 numpy: For numerical computing.
 
-Install all dependencies with:
+Install with:
 pip install -r requirements.txt
 
 📜 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+Licensed under the MIT License. See the LICENSE file for details.
