@@ -18,13 +18,15 @@ To get started with this project, follow these simple steps:
 
 Clone the repository:
 
-Bash
-
+bash
+Copy
+Edit
 git clone https://github.com/Adxrsh-17/music-generation-rnn-lstm.git
 Install dependencies:
 
-Bash
-
+bash
+Copy
+Edit
 pip install -r requirements.txt
 📖 Usage
 Dataset Preparation
@@ -48,7 +50,9 @@ Dense Layer: The final output layer, featuring a softmax activation function to 
 The model is optimized using the Adamax optimizer, known for its efficiency in training deep learning models.
 
 🗃️ Dataset
-This model is primarily trained on a dataset of classical music in MIDI format. Each MIDI file represents a distinct musical piece. These files are meticulously processed to extract notes and chords, which then serve as training data for the LSTM model. Remember, you have the option to train the model on your own MIDI files to explore various musical styles!
+This model is primarily trained on a dataset of classical music in MIDI format. Each MIDI file represents a distinct musical piece. These files are meticulously processed to extract notes and chords, which then serve as training data for the LSTM model.
+
+Remember, you have the option to train the model on your own MIDI files to explore various musical styles!
 
 📦 Dependencies
 The project relies on the following essential Python libraries:
@@ -61,8 +65,10 @@ numpy: The fundamental package for numerical computing in Python.
 
 Install all dependencies with a single command:
 
-Bash
-
+bash
+Copy
+Edit
 pip install -r requirements.txt
 📜 License
 This project is licensed under the MIT License - see the LICENSE file for more details.
+
